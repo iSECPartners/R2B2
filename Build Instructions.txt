@@ -1,0 +1,32 @@
+1. Check to make sure you have everything 
+2. Assemble 6 rods from Tamiya kits. 1. Remove plastic from sprues 
+2. screw plastic onto ends of rods (all rods should be matching length) 
+3. pull brass joints onto plastic via screws, 
+
+3. Assemble base mount pieces via friction fit. Attempt to make as level as possible 
+4. Insert servos into base mount holes, output gear should be farthest from mount.  Output gear is on the side closest to an angle, not the flat side. 
+ If you don't have a good fit, it could be that you aren't using the specced servo, and the part where you do the mount appears to vary a bit for different models. Might have to get nasty with a knife, dremel, etc. 
+
+5. Install Arduino software on PC 
+6. Plug Arduino into wall adapter and wall adapter into wall  A light should blink if your Arduino is in factory state 
+
+7. Plug Arduino into USB 
+8. Send R2B2 sketch to Arduino 
+9. Open serial connection to Arduino (57.6k, 8n1) (Arduino IDE has serial terminal built-in, or use your favorite) 
+10. Status will display on serial console 
+11. Be careful and wire up your servos to the arduino correctly (Servo will make some noise as the gear moves) 
+12. Your servos are now being set by the arduino to 90 degrees. 
+13. Use 4-pronged servo horns and attach to robot bicep with servo horn screws (or hot glue, or whatever) 
+14. Attach servo horn+bicep to servo such that the bicep points out from the center and is parallel to the base mount. 
+15. Once horn is aligned to 90 degrees, screw horn to servo. 
+16. Disconnect PC and power from Arduino 
+17. Push grommet through effector, then push nylon threaded tube through grommet. 
+18. Pull rubber stylus dome over screw head, then screw into nylon threaded tube 
+19. Screw 6 threaded rod assemblies onto effector using brass screws.  After screw is fully tightened, back out screw while holding brass hex area with pliers so that screw head does not interfere with plastic motion on ball, but brass hex is still flush with effector. 
+
+20. Screw 6 threaded rod assemblies onto biceps using same procedure as for effector 
+21. Reconnect power and USB to computer. Rerun R2B2 Sketch and serial terminal. Effector should move to (0,0,0) position, all biceps should be parallel to base mount. 
+22. Send test commands via serial terminal to verify motion is correct 
+23. recenter R2B2 
+24. disconnect usb and power 
+25. Mount the robot on a frame.  We've had great luck with camera tripods.  You'll need roughly 9" of height.
